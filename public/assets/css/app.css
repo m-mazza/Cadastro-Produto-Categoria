@@ -1,0 +1,8 @@
+@import url(bootstrap.css);
+
+body {
+    margin-top: 3rem;
+}
+.navbar{
+    margin-bottom: 1.5rem;
+}
