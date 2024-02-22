@@ -20,4 +20,9 @@ Route::get('/', function () {
 });
 Route::get('/produtos', [ControladorProduto::class,'index']);
 Route::get('/categorias', [ControladorCategoria::class,'index']);
+Route::get('/categorias/novo', [ControladorCategoria::class,'create']);
+Route::post('/categorias', [ControladorCategoria::class,'store']);
+Route::get('/categorias/apagar/{id}', [ControladorCategoria::class,'destroy']);
+Route::get('/categorias/editar/{id}', [ControladorCategoria::class,'edit']);
+Route::post('/categorias/{id}', [ControladorCategoria::class,'update']);
 
