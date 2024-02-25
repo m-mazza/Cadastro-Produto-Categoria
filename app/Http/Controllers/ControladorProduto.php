@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Produto;
+use App\Models\Categoria;
+use Illuminate\Support\Facades\DB;
 
 class ControladorProduto extends Controller
 {
@@ -13,7 +16,12 @@ class ControladorProduto extends Controller
      */
     public function index()
     {
-        return view('produtos');
+        $produtos = DB::table('produtos')
+                    ->join('categorias', 'produtos.categoria_id', '=', 'categorias.id')
+                    ->select('produtos.*', 'categorias.nome as nome_categoria')
+                    ->get();
+
+        return view('produtos', compact('produtos'));
     }
 
     /**
@@ -23,7 +31,8 @@ class ControladorProduto extends Controller
      */
     public function create()
     {
-        //
+        $categorias = Categoria::all();
+        return view('novoproduto', compact('categorias'));
     }
 
     /**
@@ -34,7 +43,14 @@ class ControladorProduto extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $produto = new Produto();
+        $produto->nome = $request->input('nomeProduto');
+        $produto->estoque = $request->input('estoqueProduto');
+        $produto->preco = $request->input('precoProduto');
+        $produto->categoria_id = $request->input('pCategoria');
+        $produto->save();
+        return redirect('/produtos');
     }
 
     /**
@@ -56,7 +72,13 @@ class ControladorProduto extends Controller
      */
     public function edit($id)
     {
-        //
+        $produto = Produto::find($id);
+        $categorias = Categoria::all();
+        $nomeCategoriaAtual = Categoria::find($produto->categoria_id)->nome;
+        if(isset($produto)){
+            return view('editarproduto', compact('produto', 'categorias', 'nomeCategoriaAtual'));
+        }
+        return redirect('/produtos');
     }
 
     /**

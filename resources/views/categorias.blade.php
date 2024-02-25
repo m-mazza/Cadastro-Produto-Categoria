@@ -3,8 +3,7 @@
 @section('body')
     <div class="card border">
         <div class="card-body">
-            <h5 class="card-title">Cadastro de Categorias</h5>
-            <br>
+            <h5 class="card-title">Todas as Categorias</h5>
 
             @if(count($categorias) > 0)
             <table class="table table-ordered table-hover">
@@ -33,6 +32,7 @@
             @endif
         </div>
         <div class="card-footer">
+            <h5 class="card-title">Cadastro de novas ategorias</h5>
             <a href="/categorias/novo" class="btn btn-sm btn-primary" role="button">Nova Categoria</a>
         </div>
     </div>
