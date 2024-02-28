@@ -26,7 +26,7 @@
                     <div class="m-1">
                         <div class="form-group">
                             <label for="precoProduto">Preço</label>
-                            <input id="precoProduto" type="text" class="form-control" name="precoProduto" placeholder="{{$produto->preco}}">
+                            <input id="precoProduto" type="text" class="form-control" name="precoProduto" placeholder="R$ {{number_format($produto->preco, 2, ',', '.') }}">
                         </div>
                     </div>
                 </div>

@@ -10,11 +10,11 @@
                 <thead>
                     <tr>
                         <th style="width:10%">Código</th>
-                        <th style="width:25%">Nome</th>
-                        <th style="width:25%">Categoria</th>
-                        <th style="width:10%">Estoque</th>
-                        <th style="width:10%">Preço</th>
-                        <th style="width:20%">Ações</th>
+                        <th style="width:30%">Nome</th>
+                        <th style="width:15%">Categoria</th>
+                        <th style="width:15%">Estoque</th>
+                        <th style="width:15%">Preço</th>
+                        <th style="width:15%">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,7 +24,7 @@
                         <td>{{$item_produto->nome}}</td>
                         <td>{{$item_produto->nome_categoria}}</td>
                         <td>{{$item_produto->estoque}}</td>
-                        <td>{{$item_produto->preco}}</td>
+                        <td> R$ {{ number_format($item_produto->preco, 2, ',', '.') }}</td>
                         <td>
                             <a href="/produtos/editar/{{$item_produto->id}}" class="btn btn-sm btn-primary">Editar</a>
                             <a href="/produtos/apagar/{{$item_produto->id}}" class="btn btn-sm btn-danger">Apagar</a>
