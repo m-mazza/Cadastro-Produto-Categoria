@@ -11,7 +11,8 @@
 </div>
 
 ## Sobre o projeto
--- em desenvolvimento
+O projeto é uma aplicação simples de cadastros de categorias e produtos. A finalidade é mostrar as habilidade em criação de Migrations, Controllers e Views para que seja feito um CRUD em um banco de dados.
+
 ## Tecnologias em destaque
 O projeto criado tem como base a demostração das skills com as seguintes tecnologias:
 <div>
