@@ -19,6 +19,7 @@ class ControladorProduto extends Controller
         $produtos = DB::table('produtos')
                     ->join('categorias', 'produtos.categoria_id', '=', 'categorias.id')
                     ->select('produtos.*', 'categorias.nome as nome_categoria')
+                    ->orderBy('produtos.id', 'ASC')
                     ->get();
 
         return view('produtos', compact('produtos'));
