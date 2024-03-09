@@ -11,7 +11,7 @@
 </div>
 
 ## Sobre o projeto
-O projeto é uma aplicação simples de cadastros de categorias e produtos. A finalidade é mostrar as habilidade em criação de Migrations, Controllers e Views do framework Laravcel para que seja feito um CRUD.
+O projeto é uma aplicação simples de cadastros de categorias e produtos. A finalidade é mostrar as habilidade em criação de Migrations, Controllers e Views do framework Laravel para que seja feito um CRUD.
 
 ## Tecnologias em destaque
 O projeto criado tem como base a demostração das skills com as seguintes tecnologias:
