@@ -11,7 +11,8 @@
 </div>
 
 ## Sobre o projeto
-O projeto é uma aplicação simples de cadastros de categorias e produtos. A finalidade é mostrar as habilidade em criação de Migrations, Controllers e Views no Laravel para que seja feito um CRUD em um banco de dados.
+
+O projeto é uma aplicação simples de cadastros de categorias e produtos. A finalidade é mostrar as habilidade em criação de Migrations, Controllers e Views do framework Laravel para que seja feito um CRUD.
 
 ## Tecnologias em destaque
 O projeto criado tem como base a demostração das skills com as seguintes tecnologias:
@@ -26,7 +27,7 @@ O projeto criado tem como base a demostração das skills com as seguintes tecno
 
 
 ## Tecnologias em conjunto
-Durante o desenvolvimento do estudo e do projeto proposto por curso, as liguagens abaixo também estarão em envidência.
+Durante o desenvolvimento do projeto, as liguagens abaixo também poderão estar em envidência.
 <div>
   <!-- HTML 5 -->
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
