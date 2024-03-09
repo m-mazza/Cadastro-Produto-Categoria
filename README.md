@@ -11,7 +11,10 @@
 </div>
 
 ## Sobre o projeto
+<<<<<<< HEAD
+=======
 
+>>>>>>> f41a9c9e35b10314f9289ce8dfbcf4458b906251
 O projeto é uma aplicação simples de cadastros de categorias e produtos. A finalidade é mostrar as habilidade em criação de Migrations, Controllers e Views do framework Laravel para que seja feito um CRUD.
 
 ## Tecnologias em destaque
